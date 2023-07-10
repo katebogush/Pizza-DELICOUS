@@ -1,0 +1,778 @@
+
+body {
+    margin: 0;
+}
+.top {
+    background-color: black;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+.logo p {
+    color: rgb(250,197,100);
+    margin: 0;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+.logo img {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+.image {
+    display: flex;
+}
+.image p {
+    font-size: 25px;
+    letter-spacing: 0;
+    color: rgb(255,255,255);
+}
+ul {
+    display: flex;
+}
+ul li {
+    list-style-type: none;
+    padding: 0 20px 0 0;
+    flex-basis: 100%;
+}
+ul li a {
+    text-decoration: none;
+    color: rgb(184,186,176);
+    font-weight: bold;
+    font-size: 13px;
+}
+.foto1 {
+  height: 600px;
+  background: url(..//images/bg_1.jpg);
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.arrow-left {
+    background: url(..//images/arrow-left.png) no-repeat center center;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    cursor: pointer;
+    left: 20px;
+    }
+.arrow-right {
+    background: url(..//images/arrow-right.png) no-repeat center center;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+.arrow-right:hover, .arrow-left:hover {
+    background-color: lightgray;
+    opacity: .5;
+}
+.slider-swith {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 5px;
+    text-align: center;
+}
+.slider-swith .outside {
+    border: 2px solid white;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    cursor: pointer;
+    margin: 5px;
+
+}
+.slider-swith .outside .active {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: white;
+    margin: 2.5px;
+}
+.foto1 img, .foto2 img {
+    width: 450px;
+    height: 450px;
+    margin: 25px;
+}
+.foto1 .about div, .foto2 .about div, .foto3 .about div {
+    display: inline-block;
+    border: 1px solid white;
+    width: 90px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.foto1 .about div a, .foto2 .about div a, .foto3 .about div a{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+.foto1 .about {
+    text-align: right;
+}
+.foto3 .about {
+    text-align: center;
+}
+.foto1 .about p:first-child,  .foto2 .about p:first-child, .foto3 .about p:first-child{
+    color: rgb(237,186,96);
+    font-style: italic;
+    font-size: 25px;
+    margin: 5px;
+}
+.foto1 .about p:nth-child(2), .foto2 .about p:nth-child(2), .foto3 .about p:nth-child(2) {
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 0;
+}
+.foto1 .about p:nth-child(3), .foto2 .about p:nth-child(3), .foto3 .about p:nth-child(3) {
+    color: white;
+    margin: 30px 0;
+}
+.foto2 {
+    height: 600px;
+    background: url(..//images/bg_1.jpg);
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display:none;
+}
+.foto3 {
+    height: 600px;
+    background: url(..//images/bg_3.jpg);
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display:none;
+}
+.main {
+    height: 170px;
+    background-color: black;
+    text-align: center;
+}
+.main p:first-child {
+    margin: 0;
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 15px 0;
+}
+.main p:last-child {
+    color: grey;
+    font-size: 14px;
+    line-height: 20px;
+}
+.menu1 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+}
+.menu1 .pizza {
+    flex-basis: 16.6%;
+    background-color: black;
+    height: 185px;
+    width: 185px; 
+}
+.menu1 img {
+    flex-basis: 16.6%;
+    height: 185px;
+    width: 185px;   
+}
+.menu1 .pizza p:first-child {
+    font-weight: bold;
+    color: white;
+    text-indent: 15px;  
+}
+.menu1 .pizza p:nth-child(2) {
+    font-size: 12px;
+    color: grey;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    line-height: 19px;
+}
+.menu1 .pizza span:nth-child(3) {
+    color:  rgb(237,186,96);
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+/* .menu1 .pizza span:last-child {
+    display: inline-block;
+    border: 1px solid white;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 5px 10px;
+    cursor: pointer;
+} */
+.gallery {
+    display: flex;
+    border-top: 35px solid black;
+}
+.gallery div {
+    height: 250px;
+    width: 25%;
+}
+.gallery div:first-child {
+    background: url(../images/gallery-1.jpg);
+}
+.gallery div:nth-child(2) {
+    background: url(../images/gallery-2.jpg);
+    background-size: cover;
+}
+.gallery div:nth-child(3) {
+    background: url(../images/gallery-3.jpg);
+}
+.gallery div:nth-child(4) {
+    background: url(../images/gallery-4.jpg);
+}
+.aboutUs {
+    height: 250px;
+    background: url(../images/bg_2.jpg)center;
+    box-shadow: inset 0px 0px 20px 300px rgba(0,0,0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutUs div {
+    width: 100px;
+    text-align: center;
+    margin: 100px 30px 20px;
+}
+.aboutUs div div {
+    border: 1px solid rgb(237,186,96);
+    height: 55px;
+    width: 55px;
+    margin: 0 auto;
+}
+.aboutUs div p:nth-child(2) {
+    color: rgb(237,186,96);
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.aboutUs div p:nth-child(3) {
+    color: white;
+    font-size: 13px;
+}
+.pizza-branches {
+    background: url(../images/pizza1_orange.png) no-repeat center;
+}
+.number-of-awards {
+    background: url(../images/laugh_orange2.png) no-repeat center;
+}
+.happy-customer {
+    background: url(../images/laugh_orange.png) no-repeat center;
+}
+.staff {
+    background: url(../images/chef_orange.png)no-repeat center;
+}
+.info {
+    display: flex;
+    justify-content: center;
+    height: 350px; 
+    background-color: black; 
+}
+.info div{
+    margin: 70px 15px 0 30px;
+    color: white;
+    background-color: black;
+}
+article {
+    display: flex;
+    margin-bottom: 15px;
+}
+article span p:first-child {
+    margin: 0 0 10px 10px;
+    font-size: 13px;
+}
+article span p:last-child {
+    margin: 0 0 10px 15px;
+    font-size: 12px;
+    color: grey;
+}
+.blog4 div {
+    display: flex;
+    margin: 7px 0;
+}
+.blog4 div p {
+    margin: 3px 0 5px 15px;
+    font-size: 16px;
+    color: grey;
+}
+.blog4 div img {
+    height: 12px;
+    width: 12px;
+    margin-top: 5px;
+}
+.blog1 p:last-child {
+    line-height: 22px;
+    color: grey;
+}
+.blog3 p:nth-child(n+2){
+    color: grey;
+}
+.social span {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: rgb(28,31,33);
+    margin: 5px;
+}
+.social {
+    display: flex;
+}
+.twitter {
+    background: url(../images/twitter-white.png) no-repeat center;
+}
+.facebook {
+    background: url(../images/facebook_white.png) no-repeat center;
+}
+.instagram {
+    background: url(../images/instagram_white.png) no-repeat center;
+}
+.copyright {
+    background-color: black;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyright p {
+    color: white;
+    margin: 0;
+}
+h4 {
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+/** Стилизация страницы Меню **/
+.decor div:nth-child(3) {
+    width: 12px;
+    height: 12px;
+    background-color: rgb(237,186,96);
+    transform: rotate(45deg);
+
+}
+.decor div:nth-child(2), .decor div:nth-child(4) {
+    width: 6px;
+    height: 6px;
+    background-color: rgb(237,186,96);
+    transform: rotate(45deg);  
+    margin-left: 5px;
+    margin-right: 5px; 
+}
+.decor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.decor div:first-child, .decor div:last-child {
+    width: 35px;
+    border-top: 1px solid  rgb(237,186,96);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.menu {
+    background-color: black;
+    text-align: center;
+    padding: 25px 0 50px;
+}
+.menu h1 {
+    color:white;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+}
+.menu p{
+    color:grey;
+    margin-bottom: 0;
+}
+.pizzas img {
+    height: 50px;
+    width: 50px;
+    margin: 0 10px 0 15px;
+}
+.all-menu {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+.pizzas {
+    display: flex;
+    margin: 20px;
+}
+.price {
+    display: flex;
+    justify-content: space-between;
+}
+.price h3 {
+    margin: 0;
+    color: rgb(182,182,182);
+    font-size: 15px;
+}
+.price div {
+    flex-basis: 45%;
+    border-bottom: 1px dotted rgb(237,186,96);
+}
+.about-pizza p {
+    color: grey;
+    font-size: 14px;
+}
+.price span {
+    color: rgb(237,186,96);
+}
+/** Стилизация страницы Сервисы **/
+.all-services img {
+    height: 40px;
+    width: 40px;
+    border: 1px solid rgb(191,126,6);
+    padding: 14px;
+    margin-bottom: 20px;
+}
+.services {
+    text-align: center;
+    padding: 50px 200px 60px;
+    background: url(../images/food.png);
+}
+.all-services {
+    display: flex;
+    justify-content: space-around;
+}
+.services h1 {
+    text-transform: uppercase;
+    color: rgb(67,55,32);
+    font-weight: 300;
+}
+.services p {
+  font-size: 15px;
+  color: rgb(148,109,37);
+  margin-bottom: 60px;
+}
+.all-services h3 {
+    text-transform: uppercase;
+    color: rgb(67,55,32);
+    font-weight: 300;
+}
+/** Стилизация страницы Блог **/
+.news div img {
+    height: 200px;
+    width: 250px;
+}
+.news {
+    display: flex;
+    justify-content: center;
+}
+.blog {
+    background-color: black;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+.blog .main {
+    text-align: center;
+}
+.blog .main h1 {
+    color: white;
+    margin: 0;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.blog .main p {
+    color: grey;
+    font-size: 15px;
+}
+.blog .news p {
+  color: grey;
+  font-size: 13px;
+}
+.blog .news h3 {
+    color: white;
+}
+.news div {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.blog .news p img {
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+}
+/** Стилизация страницы About **/
+.top-about .adress img {
+    width: 15px;
+    height: 15px;
+    margin: 0 15px;
+}
+.top-about {
+    display: flex;
+}
+.adress{
+    background-color: black;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.social-icons {
+    background-color:rgb(250,197,100);
+    width: 30%;
+    padding-left: 20px;
+}
+.adress h4 {
+    color: white;
+    margin: 0;
+}
+.adress p {
+    color: grey;
+    font-size: 14px;
+}
+.part {
+    display: flex;
+}
+.social-icons img {
+    width: 17px;
+    height: 17px;
+    margin: 45px 5px 0; 
+}
+.bottom-about img {
+    height: 350px;
+    width: 50%;
+}
+.bottom-about {
+ display: flex;
+}
+.bottom-about div {
+    background-color: black;
+    width: 50%;
+    padding-left: 100px;
+    padding-top: 40px;
+}
+.bottom-about div h4 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.bottom-about div p {
+    color: grey;
+}
+.bottom-about div h4 img {
+    height: 30px;
+    width: 30px;
+}
+.bottom-about div h4 span {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: rgb(250,197,100);
+}
+/** Стилизация страницы Контакты **/
+.contact {
+    display: flex;
+}
+.contact_us {
+    width: 50%;
+    padding-top: 100px;
+    padding-left: 70px;
+    background-color: black;
+}
+.contact_us h3 {
+   margin-bottom: 30px;
+   font-size: 25px;
+   color: white;
+}
+.contact_us label {
+    font-size: 13px;
+    color: white;
+}
+.contact_us input[type="text"]{
+    width: 75%;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid grey;
+    background-color: black;
+    color: white;
+}
+.contact_us textarea{
+    width: 75%;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    background-color: black;
+    color: white;
+    border-bottom: 1px solid grey;
+}
+.contact_us input[type="submit"]{
+    background-color: rgb(249,196,100);
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+}
+/** Модальное окно 1**/
+.wrap1 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0; top: 0; right: 0; bottom: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.modal1 {
+    width: 450px;
+    height: 250px;
+    background-color: black;
+    position: relative;
+}
+.modal1 p {
+    color: white;
+    font-size: 20px;
+    margin-left: 15px;
+}
+.modal1 div {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal1 div button {
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.modal1 div button:hover {
+    background-color: rgb(63,63,63);
+}
+.modal1 img, #cross2, #cross3 {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    height: 40px;
+    width: 50px;
+    cursor: pointer;    
+}
+#order:hover {
+    background-color: rgb(63,63,63);
+}
+.modal2 {
+    width: 500px;
+    position: fixed;
+    background-color: black;
+    top: 60px;
+    right: 50px;
+    z-index: 2000;
+    display: none;
+    min-height: 20%;
+    max-height: 90%;
+    overflow-y: scroll;
+}
+.modal2 h3 {
+    color: white;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-bottom: 1px solid grey;
+}
+.orderPic {
+    height: 50px;
+    width: 50px;
+}
+.modal2 h2 {
+    color: grey;
+    margin-left: 15px;
+}
+.orderPic {
+    margin-left: 15px;
+}
+.minusButton, .plusButton {
+    margin: 0 30px;
+}
+.deleteButton {
+    margin-left: 30px;
+    background-color: lightseagreen;
+    border-radius: 15px;
+    padding: 0 5px;
+}
+.numberPis, .subTotal {
+    color: lightgray;    
+}
+.modal2 p {
+    color: yellow;
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+.to_order {
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    margin: 30px 0 50px 15px;
+}
+.total {
+    color: white;
+}
+.basket_img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.basket_count {   
+    color: white;
+    font-size: 20px;
+    margin: 0;
+}
+/** Модальное окно 3**/
+.modal3 {
+    width: 300px;
+    height: 100px;
+    position: fixed;
+    background-color: black;
+    top: 60px;
+    right: 50px;
+    z-index: 3000;
+    display: none;
+}
+.modal3 h5 {
+    color: pink;
+    font-size: 20px;
+    text-align: center;
+}
+label {
+    color: white;
+}
+#error_p {
+    color: red;
+    margin: 0;
+    margin-left: 100px;
+    font-size: 13px;
+}
+.input-group {
+    margin: 30px 20px 0 20px;
+}
+
+.item-img {
+  width: 100%;
+  height: 100%;
+}
+.col {
+    border: 1px solid red;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Menu</title>
+    <script src="https://kit.fontawesome.com/55d4f8f751.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="order">
+    <div>back to menu</div>
+    <div class="order_img"><img src="" alt=""></div>
+    <div class="order_name"></div>
+    <div class="order_price"></div>
+    <div class="order_quality"><input type="number" maxlength="3"></div>
+    <button>add to cart</button>
+    <div class="order_description"></div>
+    <i class="fa-solid fa-xmark"></i>
+   </div>
+
+<i class="fa-regular fa-square-plus"></i>
+<i class="fa-solid fa-square-plus"></i>
+
+<i class="fa-solid fa-basket-shopping"></i>
+<i class="fa-solid fa-square-minus"></i>
+<script>
+
+    class CreateOrderBlock{
+        constructor(){
+            this.order_block = document.querySelector("#order_block");
+            this.order = document.querySelector("#order");
+            this.order_btns = document.querySelectorAll(".order");
+            this.quantity;
+            this.div_order = document.createElement("div");
+            this.order_names = document.querySelectorAll(".order_name");
+            this.order_imgs = document.querySelectorAll(".order_img");
+            this.order_prices = document.querySelectorAll(".order_price")
+
+        }
+
+        changeOrderButton(){
+                this.btn.addEventListener(cli)
+        
+//     order_btns.forEach(btn => btn.addEventListener("click", function (e){
+//     e.target.style.display = "none";
+//     quantity = document.createElement("div");
+//     quantity.setAttribute( 'data-order', `${e.target.dataset.order}`)
+//     quantity.classList.add("quantity_btn");
+//     quantity.insertAdjacentHTML("afterbegin", '<i class="fa-solid fa-square-minus"></i>');
+//     quantityNumber = document.createElement("span");
+//     quantityNumber.classList.add("quantity_number");
+//     quantityNumber.textContent = 1;
+//     quantity.append(quantityNumber);
+//     quantity.insertAdjacentHTML("beforeend", '<i class="fa-solid fa-square-plus"></i>');
+//     btn.after(quantity);
+      
+//         div_order.classList.add("div_order");
+        
+//         for (const img of order_imgs) {
+//             if (e.target.dataset.order == img.dataset.order) {
+//                 let img_in_order = document.createElement("img");
+//                 img_in_order.src = img.src;
+//                 img_in_order.classList.add("img_in_order");
+//                 div_order.append(img_in_order)
+
+//             }
+//         }
+//         let divInfoPosition = document.createElement("div");
+//         divInfoPosition.classList.add("info_position")
+//             for (const name of order_names) {
+//                 if (e.target.dataset.order == name.dataset.order) {
+//                   name_in_order = document.createElement("p");
+//                     name_in_order.textContent = name.textContent;
+//                     name_in_order.classList.add("name_in_order");
+//                     divInfoPosition.append(name_in_order);
+//                 }
+//             }
+             
+//             for ( price of order_prices) {
+//                 if (e.target.dataset.order == price.dataset.order) {
+//                     quantity = document.createElement("div");
+//                     quantity.setAttribute('data-order', `${e.target.dataset.order}`);
+//                     quantity.classList.add("quantity");
+//                     quantity.insertAdjacentHTML("afterbegin", '<i class="fa-solid fa-square-minus"></i>');
+//                     quantityNumber = document.createElement("span");
+//                     quantityNumber.classList.add("quantity_number");
+//                     quantityNumber.textContent = 1;
+//                     quantity.append(quantityNumber);
+//                     quantity.insertAdjacentHTML("beforeend", '<i class="fa-solid fa-square-plus"></i>');
+//                     divInfoPosition.append(quantity);
+//                     price_in_order = document.createElement("span");
+//                     price_in_order.textContent = price.textContent;
+//                     price_in_order.classList.add("price_in_order");
+//                     divInfoPosition.append(price_in_order);
+//                 }
+//         } 
+//         div_order.append(divInfoPosition);
+       
+//         div_order.insertAdjacentHTML("beforeend", '<i id="xmark_block_order" class="fa-solid fa-xmark xmark"></i>')
+//         order_block.append(div_order);
+//         document.querySelectorAll("#xmark_block_order").forEach(xmark => xmark.addEventListener("click", function (e) {
+//             e.target.parentElement.remove();
+//             if (order_block.innerHTML) {
+//                 return
+//             } else {
+//                 order.style.display = "none"
+//             }
+  
+//         }))
+//     let minusOne = document.querySelectorAll(".fa-square-minus");
+//     let plusOne = document.querySelectorAll(".fa-square-plus");
+//     let quantityInfo = document.querySelectorAll(".quantity_number");
+
+//     minusOne.forEach(min => min.addEventListener("click", function (e){
+//         if (min.nextElementSibling.textContent == 1) {
+//             return
+//         } else {
+//             let numOrder = Number(min.nextElementSibling.textContent);
+//             min.nextElementSibling.textContent = (numOrder-1)
+//         }
+//     }))
+//     plusOne.forEach(plus => plus.addEventListener("click", function () {
+//         let numOrder = Number(plus.previousElementSibling.textContent);
+//         let sumOrder = numOrder + 1
+//         plus.previousElementSibling.textContent = sumOrder;
+//         // let totalSum = sumOrder * price
+//         console.log(this.price)
+//     }))
+// }))
+}
+    
+}
+       
+</script>
+
+</body>
+</html>
